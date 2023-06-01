@@ -2,7 +2,7 @@ import React from "react";
 import PagesLayout from "@/components/PagesLayout";
 import { useForm } from "react-hook-form";
 
-function support() {
+function Support() {
   const {
     register,
     handleSubmit,
@@ -145,4 +145,4 @@ function support() {
   );
 }
 
-export default support;
+export default Support;

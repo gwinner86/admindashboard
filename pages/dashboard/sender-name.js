@@ -4,7 +4,7 @@ import { FiCheck } from "react-icons/fi";
 import { useForm } from "react-hook-form";
 import ContactSupport from "@/components/ContactSupport";
 
-function senderName() {
+function SenderName() {
   const Test = (e) => {
     console.log(e);
   };
@@ -127,4 +127,4 @@ function senderName() {
   );
 }
 
-export default senderName;
+export default SenderName;

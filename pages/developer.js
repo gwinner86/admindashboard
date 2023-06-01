@@ -2,7 +2,7 @@ import React from "react";
 import PagesLayout from "@/components/PagesLayout";
 import { useForm } from "react-hook-form";
 
-function developer() {
+function Developer() {
   const {
     register,
     handleSubmit,
@@ -149,4 +149,4 @@ function developer() {
   );
 }
 
-export default developer;
+export default Developer;

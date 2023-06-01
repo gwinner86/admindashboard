@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SidebarMenuItem from "./SidebarMenuItem";
 import Image from "next/image";
 
@@ -12,6 +12,13 @@ import {
 } from "react-icons/fi";
 
 function Sidebar() {
+  const [userData, setUserData] = useState({});
+
+  useEffect(() => {
+    const user = JSON.parse(sessionStorage.getItem("UserData"));
+    setUserData(user);
+  }, []);
+
   return (
     <div className="text-center bg-white overflow-y-auto overflow-x-hidden">
       <div className="pt-6 pb-2 flex items-center justify-center flex-col">
@@ -23,8 +30,8 @@ function Sidebar() {
           className="rounded-full"
         />
         <div>
-          <h2 className="text-sm font-bold">Wintek Solution</h2>
-          <p className="text-gray-400 text-[12px]">godwinwinner@gmail.com</p>
+          <h2 className="text-sm font-bold">{userData.name}</h2>
+          <p className="text-gray-400 text-[12px]">{userData.email}</p>
         </div>
       </div>
       <div className="px-6 py-4">
@@ -37,7 +44,7 @@ function Sidebar() {
         <SidebarMenuItem
           Icon={FiUsers}
           title="Groups"
-          url="/group-recipients"
+          url="/dashboard/groups"
         />
         <SidebarMenuItem
           Icon={FiCalendar}

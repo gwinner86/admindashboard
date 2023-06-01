@@ -2,7 +2,7 @@ import React from "react";
 import PagesLayout from "@/components/PagesLayout";
 import { useForm } from "react-hook-form";
 
-function pricing() {
+function Pricing() {
   const {
     register,
     handleSubmit,
@@ -111,4 +111,4 @@ function pricing() {
   );
 }
 
-export default pricing;
+export default Pricing;
