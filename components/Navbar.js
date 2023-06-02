@@ -13,7 +13,7 @@ function Navbar() {
     <div className="px-10  lg:px-14 xl:px-48 flex justify-between  items-center bg-white py-4 sticky top-0 z-50">
       <div>
         <Link href="/">
-          <Image src="/img/logo.png" alt="Logo" height={80} width={140} />
+          <Image src="/img/logo.png" alt="Logo" height={80} width={180} />
         </Link>
       </div>
       <div className="hidden lg:flex gap-x-4">

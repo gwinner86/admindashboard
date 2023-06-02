@@ -42,10 +42,10 @@ export default function Home() {
             <div className="flex md:flex-1">
               <Image
                 src="/img/team.jpg"
-                width={540}
+                width={700}
                 height={482}
                 alt=""
-                className="rounded-lg"
+                className="rounded-lg w-2/3"
               />
             </div>
           </div>
