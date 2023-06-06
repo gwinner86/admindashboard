@@ -66,8 +66,9 @@ function Register() {
               <Image
                 src="/img/logo.png"
                 alt="Login logo"
-                width={130}
-                height={130}
+                width={140}
+                height={80}
+                className="bg-cover w-[70%]"
               />
             </Link>
 

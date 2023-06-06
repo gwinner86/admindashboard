@@ -6,7 +6,13 @@ function Topbar() {
   return (
     <div className="flex items-center justify-between px-6 py-3 bg-white">
       <div>
-        <Image src="/img/logo.png" alt="Logo" height={80} width={140} />
+        <Image
+          src="/img/logo.png"
+          alt="Logo"
+          height={80}
+          width={140}
+          className="bg-cover"
+        />
       </div>
       <div>
         <Link href="/" className="cursor-pointer">
