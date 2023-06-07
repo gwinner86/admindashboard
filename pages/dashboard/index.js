@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import DashboardLayout from "@/components/DashboardLayout";
 import DataTable from "react-data-table-component";
 
-function index() {
+function Index() {
   const columns = [
     {
       name: "Title",
@@ -64,11 +64,7 @@ function index() {
       year: "1987",
     },
   ];
-  const [records, setRecords] = useState();
-
-  useEffect(() => {
-    setRecords(data);
-  }, []);
+  const [records, setRecords] = useState(data);
 
   const clickHandler = (e, id) => {
     e.preventDefault();
@@ -109,4 +105,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;
