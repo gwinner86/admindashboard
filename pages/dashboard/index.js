@@ -93,9 +93,8 @@ function Index() {
           <div className="py-5 flex items-end justify-end ">
             <input
               type="text"
-              className=""
-              onChange={getFilteredData}
               className="form-search"
+              onChange={getFilteredData}
             />
           </div>
           <DataTable columns={columns} data={records} selectableRows="true" />
