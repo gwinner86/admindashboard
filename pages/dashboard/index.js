@@ -98,12 +98,7 @@ function index() {
               className="form-search"
             />
           </div>
-          <DataTable
-            columns={columns}
-            data={records}
-            selectableRows="true"
-            pagination
-          />
+          <DataTable columns={columns} data={records} selectableRows="true" />
         </div>
       </DashboardLayout>
     </div>
