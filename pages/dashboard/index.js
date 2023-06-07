@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import DashboardLayout from "@/components/DashboardLayout";
 import DataTable from "react-data-table-component";
 
@@ -64,7 +64,11 @@ function index() {
       year: "1987",
     },
   ];
-  const [records, setRecords] = useState(data);
+  const [records, setRecords] = useState();
+
+  useEffect(() => {
+    setRecords(data);
+  }, []);
 
   const clickHandler = (e, id) => {
     e.preventDefault();

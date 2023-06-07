@@ -88,7 +88,7 @@ function Login() {
                   id="emailaddress"
                   name="emailaddress"
                   className="form-control"
-                  placeholder="godwin@gmail.com"
+                  placeholder="company@comapanyemail.com"
                   {...register("emailaddress", {
                     required: "Email address is required",
                     pattern: {

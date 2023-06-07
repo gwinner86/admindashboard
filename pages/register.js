@@ -89,7 +89,7 @@ function Register() {
                   type="email"
                   id="email"
                   className="form-control"
-                  placeholder="godwin@gmail.com"
+                  placeholder="company@companyemail.com"
                   {...register("emailaddress", {
                     required: false,
                     pattern: {
